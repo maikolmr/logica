@@ -1,0 +1,48 @@
+<meta charset="UTF-8">
+<script>
+
+var pessoa = new Array(20);
+
+for (var i = 0; i < pessoa.length; i++)
+{
+	pessoa[i] = {
+		salario : parseFloat(prompt("Informe o salário")),
+		idade : parseInt(prompt("Informe a idade")),
+		filhos : parseInt(prompt("Informe o número de filhos")),
+		sexo : prompt("Informe o sexo")
+	}
+}
+
+var soma_salario = 0;
+var soma_filhos = 0;
+var maior_salario = pessoa[0].salario;
+var cont_mulheres = 0;
+var cont_mulheres_mil = 0;
+
+for (var i = 0; i < pessoa.length; i++)
+{
+	soma_salario += pessoa[i].salario;
+	soma_filhos += pessoa[i].filhos;
+	
+	if (pessoa[i].salario > maior_salario)
+	{
+		maior_salario = pessoa[i].salario;
+	}
+
+	if (pessoa[i].sexo.toUpperCase() == "F")
+	{
+		cont_mulheres++;
+		
+		if (pessoa[i].salario > 1000)
+		{
+			cont_mulheres_mil++;
+		}
+	}
+}
+
+document.write("Média de salário: " + (soma_salario/pessoa.length) + "<br>");
+document.write("Média de filhos: " + (soma_filhos/pessoa.length) + "<br>");
+document.write("Maior salário: " + maior_salario + "<br>");
+document.write("Percentual de mulheres acima de R$ 1.000,00: " + (cont_mulheres_mil/cont_mulheres*100));
+
+</script>

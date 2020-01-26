@@ -1,0 +1,26 @@
+<meta charset="UTF-8">
+<script>
+var a = prompt("Valor de a");
+
+while (a == 0) {
+	alert("O valor de a não pode ser zero!");
+	a = prompt("Valor de a");
+}
+
+var b = prompt("Valor de b");
+var c = prompt("Valor de c");
+
+var delta = b*b - 4*a*c;
+
+if (delta < 0) {
+	document.write("Não possui raízes reais.");
+}
+else {
+	var x1 = (-b - Math.sqrt(delta)) / (2*a);
+	var x2 = (-b + Math.sqrt(delta)) / (2*a);
+
+	document.write("x1 = " + x1 + "<br>");
+	document.write("x2 = " + x2);
+}
+
+</script>

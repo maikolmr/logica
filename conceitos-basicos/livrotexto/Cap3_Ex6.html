@@ -1,0 +1,13 @@
+<meta charset="UTF-8">
+<script>
+
+var salarioFixo = parseFloat(prompt("Informe o valor do salário fixo"));
+var vendas = parseFloat(prompt("Informe o valor das vendas"));
+
+var comissao = vendas * 0.04;
+var salarioFinal = salarioFixo + comissao;
+
+document.write("Comissão: " + comissao.toFixed(2) + "<br>");
+document.write("Salário final: " + salarioFinal.toFixed(2));
+
+</script>
