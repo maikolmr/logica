@@ -19,7 +19,11 @@ AV2:
 •	Algoritmos Fundamentais (1 a 6)
 
 AV3:
+
 •	Vetor
+
 •	Técnicas com vetores
+
 •	Intercalação, ordenação e pesquisa
+
 •	Registro/classe*
