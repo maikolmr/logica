@@ -27,3 +27,11 @@ AV3:
 •	Intercalação, ordenação e pesquisa
 
 •	Registro/classe*
+
+Lógica de Programação - Forma de Avaliação
+
+Avaliação Normativa: 20%
+Trabalhos (AV): 40%
+Provas (AV): 40%
+
+Participação / Desafios / Comportamental: Pontos extras
